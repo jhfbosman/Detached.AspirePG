@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="src/Detached.AspirePG.ApiService/Detached.AspirePG.ApiService.csproj" />
+  <Project Path="src/Detached.AspirePG.AppHost/Detached.AspirePG.AppHost.csproj" Id="7d0c90fc-60b3-4ad8-8c9c-57c902f8399a" />
+  <Project Path="src/Detached.AspirePG.ServiceDefaults/Detached.AspirePG.ServiceDefaults.csproj" />
+  <Project Path="src/Detached.AspirePG.Tests/Detached.AspirePG.Tests.csproj" />
+  <Project Path="src/Detached.AspirePG.Web/Detached.AspirePG.Web.csproj" />
+</Solution>
