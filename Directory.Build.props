@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Label="Resources">
+    <None Include="$(SourceRoot)favicon.png" Pack="true" Visible="false"
+      PackagePath="/Resources/Images/" />
+  </ItemGroup>
+
+  <PropertyGroup Label="Product Info">
+    <Product>DHome</Product>
+    <!-- <Title>DHome</Title> -->
+    <!-- <Description>The Core of DHome</Description> -->
+    <AssemblyTitle>$(Title)</AssemblyTitle>
+    <FileDescription>$(Description)</FileDescription>
+    <Authors>Detached Developers &lt;dev@detached.co.za&gt;</Authors>
+    <Company>Detached IT</Company>
+    <Copyright>©2026 Detached IT. All rights reserved.</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/detached-it/DHome.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/detached-it/DHome</PackageProjectUrl>
+    <PackageIcon>/Resources/Images/favicon.png</PackageIcon>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    <PackageTags>C#</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" Condition="!Exists('packages.config')"
+      Version="3.9.50">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
